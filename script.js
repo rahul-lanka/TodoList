@@ -37,8 +37,8 @@ function renderTasks() {
            <span class="task-details">${item.date}</span>
            <span class="task-details">${item.priority}</span>
             <div>
-                <button onclick="toggleCompletion(${index})" class="completed-btn">${item.completed ? '' : '<img src="check-circle.svg" alt="completed">'}</button>
-                <button onclick="deleteItem(${index})" class="delete-btn"><img src="trash-black.svg" alt="Delete"></button>
+                <button onclick="toggleCompletion(${index})" class="completed-btn">${item.completed ? '' : '<img src="assets/check-circle.svg" alt="completed">'}</button>
+                <button onclick="deleteItem(${index})" class="delete-btn"><img src="assets/trash-black.svg" alt="Delete"></button>
             </div>
         </div>`;
 
