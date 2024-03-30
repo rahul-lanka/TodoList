@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add-item {
+  margin-bottom: 20px;
+  display: flex; /* Display items in a row */
+  align-items: center; /* Vertically center items */
+}
+
+.add-item input,
+.add-item select {
+  height: 40px; /* Set the height of input fields */
+  width: 250px; /* Customize the width of input fields */
+  margin-right: 10px;
+}
+
+.add-item button {
+  height: 40px; /* Set the height of the button to match input fields */
+  background-color: black; /* Custom button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 0 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer;
+}
+
+.add-item button:hover {
+  background-color: green; /* Darken button color on hover */
+}
+.todays-tasks .todo-item,
+.future-tasks .todo-item {
+    background-color: black; /* Set background color of individual tasks to black */
+    color: white; /* Set text color of individual tasks to white */
+    border: 1px solid #ccc; /* Reset border for individual tasks */
+    margin-bottom: 10px; /* Add margin bottom for separation */
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-details {
+  margin-right: 10px; /* Add margin between task details */
+}
+.todo-item.past-deadline {
+  border: 1px solid red; /* Apply red border for past deadline tasks */
+}
+
+.delete-btn {
+  /* background-color: transparent; */
+  /* color: white;  */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.completed-btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
